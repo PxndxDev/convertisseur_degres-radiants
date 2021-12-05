@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root {
+    --c1: #11151D;
+    --c2: #222D41;
+    --c3: #374158;
+    --c4: #7F5056;
+    --c5: #D76C58;
+    --c6: #dddddd;
+    --font: 'Unica One', cursive;
+    --font2: 'Josefin Sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--c2);
+}
+header {
+    text-align: center;
+}
+header h1 {
+    font-family: var(--font);
+    font-size: 350%;
+    color: var(--c5)
+}
+#convertisseur {
+    margin: 0 auto;
+    width: 300px;
+}
+#convertisseur div {
+    text-align: center;
+    display: block;
+    border: 2px var(--c5) solid;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    background-color: var(--c3);
+    transition-duration: 0.5s;
+    font-family: var(--font2);
+}
+#convertisseur div:hover {
+    background-color: var(--c4);
+}
+#convertisseur div.divClicked {
+    background-color: var(--c5);
+}
+#convertisseur div label, #convertisseur div label input {
+    display: block;
+}
+#convertisseur div label {
+    font-size: 200%;
+    color: var(--c6)
+}
+#convertisseur div input {
+    color: var(--c1);
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--c6);
+}
+#convertisseur div input:focus {
+    outline: var(--c1) 2px solid;
+}
+.focus-in-expand-text {
+	-webkit-animation: focus-in-expand 1s ease-in-out 1s both;
+	        animation: focus-in-expand 1s ease-in-out 1s both;
+}
+.focus-in-expand-div {
+	-webkit-animation: focus-in-expand 1s ease-in-out 1.5s both;
+	        animation: focus-in-expand 1s ease-in-out 1.5s both;
+}
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}

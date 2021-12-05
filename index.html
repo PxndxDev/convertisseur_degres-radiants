@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=firefox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <title>Convertisseur</title>
+</head>
+<body class="color-change-3x">
+
+    <header><h1 class="focus-in-expand-text">Convertisseur</h1></header>
+
+    <div id="convertisseur">
+
+        <div onclick="divClicked(event)" class="focus-in-expand-div">
+            <label for="degres">Degrés</label>
+            <input id="degresInput" type="text" placeholder="..." value="0" name="degres" maxlength="19">
+        </div>
+
+        <div onclick="divClicked(event)" class="focus-in-expand-div">
+            <label for="radiants">Radiants</label>
+            <input id="radiantsInput" type="text" placeholder="..." value="0" name="radiants" maxlength="18">
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
