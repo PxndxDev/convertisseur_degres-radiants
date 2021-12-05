@@ -64,7 +64,7 @@ const checkEntry = (target) => {
 */
 document.getElementById("degresInput").addEventListener("input", function (event) {
     checkEntry(event.target)
-    if (isNaN(event.target.value)) event.target.value = event.target.value.split("").filter(element => !isNaN(element));
+    if (isNaN(event.target.value)) event.target.value = event.target.value.split("").filter(element => !isNaN(element)).join("")
 
     let entry = Number(event.target.value);
 
@@ -72,7 +72,7 @@ document.getElementById("degresInput").addEventListener("input", function (event
 });
 document.getElementById("radiantsInput").addEventListener("input", function (event) {
     checkEntry(event.target)
-    if (isNaN(event.target.value)) event.target.value = event.target.value.split("").filter(element => !isNaN(element));
+    if (isNaN(event.target.value)) event.target.value = event.target.value.split("").filter(element => !isNaN(element)).join("");
 
     let entry = Number(event.target.value);
 
